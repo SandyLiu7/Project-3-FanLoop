@@ -1,0 +1,8 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="90" fill="#E4E2F7"/>
+  <circle cx="760" cy="120" r="150" fill="white" opacity="0.5"/>
+  <circle cx="130" cy="760" r="190" fill="white" opacity="0.38"/>
+  <rect x="180" y="250" width="540" height="400" rx="70" fill="white" opacity="0.72"/>
+  <text x="450" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" fill="#8B86C7">Cyrene</text>
+  <text x="450" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="600" fill="#8B86C7" opacity="0.78">Card Cover</text>
+</svg>

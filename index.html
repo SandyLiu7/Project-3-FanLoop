@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FanLoop Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <!-- Left / bottom toolbar -->
+    <aside class="toolbar" aria-label="Main toolbar">
+      <button class="tool brand-tool" data-action="home" title="Home">
+        <img src="assets/logo-placeholder.svg" alt="FanLoop logo placeholder" class="brand-logo" />
+      </button>
+
+      <button class="tool active" data-action="home" data-tooltip="Home">⌂</button>
+      <button class="tool" data-action="switch-board" data-tooltip="Switch board">▦</button>
+      <button class="tool" data-action="filter" data-tooltip="Search and filters">⌕</button>
+      <button class="tool" data-action="post" data-tooltip="Post item">＋</button>
+      <button class="tool" data-action="messages" data-tooltip="Messages and notices">✉</button>
+      <button class="tool" data-action="orders" data-tooltip="Exchange orders">◎</button>
+      <button class="tool" data-action="saved" data-tooltip="Saved folders">♡</button>
+      <button class="tool" data-action="profile" data-tooltip="Profile">◉</button>
+      <button class="tool" data-action="region" data-tooltip="Change local board">⌾</button>
+      <button class="tool" data-action="theme" data-tooltip="Switch board color theme">✦</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand">
+          <img src="assets/logo-placeholder.svg" alt="FanLoop logo placeholder" class="brand-logo" />
+        </div>
+
+        <section class="search-strip">
+          <div class="search-wrap">
+            <span class="search-icon">⌕</span>
+            <input id="globalSearch" type="search" placeholder="Search title or tags..." autocomplete="off" />
+          </div>
+          <button id="advancedBtn" class="ghost-btn">Advanced</button>
+        </section>
+
+        <section class="account-strip">
+          <button id="regionPill" class="pill-button"></button>
+          <button id="loginBtn" class="soft-btn"></button>
+        </section>
+      </header>
+
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <!-- Drawer / modal root -->
+  <div id="drawerBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="drawer" class="drawer hidden"></aside>
+
+  <div id="modalBackdrop" class="modal-backdrop hidden"></div>
+  <section id="modal" class="modal hidden" role="dialog" aria-modal="true"></section>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
