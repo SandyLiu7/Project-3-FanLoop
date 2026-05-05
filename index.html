@@ -8,10 +8,9 @@
 </head>
 <body>
   <div id="app" class="app-shell">
-    <!-- Left / bottom toolbar -->
     <aside class="toolbar" aria-label="Main toolbar">
-      <button class="tool brand-tool" data-action="home" title="Home">
-        <img src="assets/logo-placeholder.svg" alt="FanLoop logo placeholder" class="brand-logo" />
+      <button class="tool brand-tool" data-action="home" title="FanLoop Home">
+        <span class="brand-mark">FL</span>
       </button>
 
       <button class="tool active" data-action="home" data-tooltip="Home">⌂</button>
@@ -23,13 +22,15 @@
       <button class="tool" data-action="saved" data-tooltip="Saved folders">♡</button>
       <button class="tool" data-action="profile" data-tooltip="Profile">◉</button>
       <button class="tool" data-action="region" data-tooltip="Change local board">⌾</button>
+      <button class="tool" data-action="diy" data-tooltip="DIY tag board">✧</button>
       <button class="tool" data-action="theme" data-tooltip="Switch board color theme">✦</button>
     </aside>
 
     <main class="main">
       <header class="topbar">
         <div class="mobile-brand">
-          <img src="assets/logo-placeholder.svg" alt="FanLoop logo placeholder" class="brand-logo" />
+          <span class="brand-mark">FL</span>
+          <strong>FanLoop</strong>
         </div>
 
         <section class="search-strip">
@@ -50,7 +51,6 @@
     </main>
   </div>
 
-  <!-- Drawer / modal root -->
   <div id="drawerBackdrop" class="drawer-backdrop hidden"></div>
   <aside id="drawer" class="drawer hidden"></aside>
 
